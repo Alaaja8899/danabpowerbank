@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { AiFillThunderbolt } from "react-icons/ai";
-import { GiThunderStruck } from "react-icons/gi";
+import { IoMenu } from "react-icons/io5";
 
 function Header() {
   const[menu ,setMenue] = useState(false)
@@ -27,9 +27,9 @@ function Header() {
         </nav>
 
         <div onClick={()=> setMenue(!menu)}
-        className="md:hidden flex border border-violet-500 rounded-full menue cursor-pointer"
+        className="md:hidden flex   menue cursor-pointer"
         >
-          <GiThunderStruck size={32} color='violet'/>
+            <IoMenu size={32}/>
         </div>
 
 
