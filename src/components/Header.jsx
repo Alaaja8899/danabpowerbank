@@ -5,7 +5,7 @@ import { GiThunderStruck } from "react-icons/gi";
 function Header() {
   const[menu ,setMenue] = useState(false)
   return (
-    <div className='flex items-center justify-between p-6  border-b-2 border-violet-500 rounded-b-lg h-[83px]  sticky top-0'>
+    <div className='flex items-center justify-between p-6 bg-white border-b-2 border-violet-500  h-[83px]  sticky top-0'>
        
       <h2
       className=' text-2xl font-bold'
