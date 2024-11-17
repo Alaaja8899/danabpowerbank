@@ -14,7 +14,7 @@ function Header() {
       >Da <AiFillThunderbolt color='violet'/>  ab powerBank</a></h2>
 
 
-        <nav className={`flex ${menu ? 'absolute md:relative md:top-0 md:bg-none':'hidden md:flex'}  flex-col md:flex-row left-0 p-6   border md:border-none   border-e-violet-400 w-full md:w-fit  top-full  gap-5`}>
+        <nav className={`flex ${menu ? 'absolute md:relative md:top-0 md:bg-none bg-white':'hidden md:flex'}  flex-col md:flex-row left-0 p-6   border md:border-none   border-e-violet-400 w-full md:w-fit  top-full  gap-5`}>
           <a href="#!" className='bg-blue-500 rounded px-6 py-2 text-white'>
             Home            
           </a>

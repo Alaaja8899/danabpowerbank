@@ -15,7 +15,7 @@ function HeroSection() {
             BATTERY?
             </h2>
             <p className='text-2xl'>
-            Rent a POWER RENT near you and charge your mobile phone, tablet, or whatever you need, no matter where you are in Sevilla.
+            Rent a POWER RENT near you and charge your mobile phone, tablet, or whatever you need, no matter where you are in Xamar.
             </p>
 
             <button
