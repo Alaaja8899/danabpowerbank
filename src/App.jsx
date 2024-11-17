@@ -1,12 +1,14 @@
 import React from 'react'
 import Card from './components/Card'
-import CustomerTable from './components/CustomerTable'
+import Home from './pages/Home'
 
 function App() {
   return (
-    <div className='flex items-center justify-center min-h-screen p-3'>
-        <Card/>
-        {/* <CustomerTable/> */}
+    <div className=''>
+
+      <Home/>
+
+
     </div>
   )
 }
