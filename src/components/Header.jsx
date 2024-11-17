@@ -1,32 +1,39 @@
-import React from 'react'
-import logoImg from '../assets/images/logo.svg'
+import React, { useState } from 'react'
+import { AiFillThunderbolt } from "react-icons/ai";
+import { GiThunderStruck } from "react-icons/gi";
 
-
-const Header = () => {
+function Header() {
+  const[menu ,setMenue] = useState(false)
   return (
-    <div className='flex min-h-[84px] border w-full shadow justify-between items-center p-6 static top-0'>
-      <a href="#!" className="logo border-red-400 border">
-        <img className='h-[83px] w-[200px]' src={logoImg} alt="danabLogo Image" />
-      </a>
+    <div className='flex items-center justify-between p-6  border-b-2 border-violet-500 rounded-b-lg h-[83px]  sticky top-0'>
+       
+      <h2
+      className=' text-2xl font-bold'
+      ><a href="#!"
+      className='flex items-center justify-center'
+      >Da <AiFillThunderbolt color='violet'/>  ab powerBank</a></h2>
 
 
-      <nav className='md:flex hidden gap-5 items-center '>
-        <a href="#!"
-        className='rounded-full bg-blue-500 p-3 px-6 w-[11rem] text-center text-white'
+        <nav className={`flex ${menu ? 'absolute md:relative md:top-0 md:bg-none':'hidden md:flex'}  flex-col md:flex-row left-0 p-6   border md:border-none   border-e-violet-400 w-full md:w-fit  top-full  gap-5`}>
+          <a href="#!" className='bg-blue-500 rounded px-6 py-2 text-white'>
+            Home            
+          </a>
+          <a href="#!" className='bg-green-500 rounded px-6 py-2 text-white'>
+            ServiceBooking
+          </a>
+          <a href="#!" className='bg-yellow-500 rounded px-6 py-2 text-white'>
+            Dashboard
+          </a>
+        </nav>
+
+        <div onClick={()=> setMenue(!menu)}
+        className="md:hidden flex border border-violet-500 rounded-full menue cursor-pointer"
         >
-        Home
-        </a>
-        <a href="#!"
-        className='rounded-full bg-green-500 p-3 px-6 text-white w-[11rem] text-center'
-        >
-          ServiceBooking
-        </a>
-        <a href="#!"
-        className='rounded-full bg-yellow-500 p-3 px-6 text-white w-[11rem] text-center'
-        >
-          Dashboard
-        </a>
-      </nav>
+          <GiThunderStruck size={32} color='violet'/>
+        </div>
+
+
+
     </div>
   )
 }
