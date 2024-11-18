@@ -47,6 +47,26 @@ const Card = () => {
             <button type="submit" className='bg-violet-500 w-full p-3 rounded text-white'>
                 Submit
             </button>
+
+            <br />
+
+            <div className="details flex flex-col text-center my-6 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded p-3">
+                <h2 className='font-bold text-3xl text-white'>Contact us</h2>
+
+                <p>Muqdisho, Xamar Weyne, Somalia</p>
+
+                <div className="links underline flex flex-col">
+                <a href="#!">danabpowerbank@gmail.com</a>
+                <div className="numbers flex gap-3 items-center justify-center">
+                <a href="#!">+252616251068</a>
+                <a href="#!">+252616586503</a>
+
+                </div>
+
+                </div>
+
+        </div>
+
         </form>
 
 

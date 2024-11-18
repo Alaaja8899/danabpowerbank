@@ -1,6 +1,8 @@
 import React from 'react'
 import thugIMG from '../assets/images/tank.jpg'
+import { useGlobalContext } from './context/GlobalContext'
 function HeroSection() {
+  const {setRenting} = useGlobalContext()
   return (
     <div className='container p-6 flex items-center md:flex-row flex-col'>
 
@@ -18,7 +20,7 @@ function HeroSection() {
             Rent a POWER RENT near you and charge your mobile phone, tablet, or whatever you need, no matter where you are in Xamar.
             </p>
 
-            <button
+            <button onClick={()=> setRenting(true)}
             className='bg-violet-500 rounded p-3 text-white'
             >
                 Rent Now !
