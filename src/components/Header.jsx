@@ -18,12 +18,18 @@ function Header() {
 
         <nav className={`flex ${menu ? 'absolute md:relative md:top-0 md:bg-none bg-white':'hidden md:flex'}  flex-col md:flex-row left-0 p-6   border md:border-none   border-e-violet-400 w-full md:w-fit  top-full  gap-5`}>
           <a
-          onClick={()=> setRenting(false)}
+          onClick={()=> {
+            setRenting(false)
+            setMenue(false)
+          }}
           href="#!" className='bg-blue-500 rounded px-6 py-2 text-white'>
             Home            
           </a>
           <a 
-          onClick={()=> setRenting(true)}
+          onClick={()=> {
+            setRenting(true)
+            setMenue(false)
+          }}
           href="#!" className='bg-green-500 rounded px-6 py-2 text-white'>
             ServiceBooking
           </a>
