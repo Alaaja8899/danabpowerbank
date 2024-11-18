@@ -52,7 +52,6 @@ const toolkit = [
 function Home() {
   return (
     <div className=''>
-        <Header/>
         <HeroSection/>
         <hr />
         
